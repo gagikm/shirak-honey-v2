@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && node server.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -21,8 +21,18 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.7",
+    "@shopify/buy-button-js": "^0.5.0",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
     "core-js": "^2.4.1",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "http": "0.0.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
     "rxjs": "^5.5.2",
+    "serve-favicon": "~2.4.5",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
