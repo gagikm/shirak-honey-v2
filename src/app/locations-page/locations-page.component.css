@@ -1,0 +1,38 @@
+.locationItem {
+	padding: 20px;
+	min-width: 200px;
+}
+
+.locationImage {
+	text-align: center;
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+}
+
+.locationImage img{
+	width: 100%;
+}
+
+.locationName {
+	padding: 5px;
+	height: 60px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.locationAddress {
+	text-align: center;
+	height: 80px;
+	padding: 5px;
+}
+
+.directionsButton {
+	text-align: center;
+	padding: 5px;
+}
+
+.directionsButton a {
+	background-color: #3498db;
+}

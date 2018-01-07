@@ -19,17 +19,46 @@ export class ShopifyProductService {
 	  	id: collectionId,
 	  	node: document.getElementById(elementId),
 	  	options: {
+	  		productSet: {
+	  			styles: {
+	  				products: {
+	  					'justify-content': 'center',
+	  				}
+	  			}
+	  		},
 	  		product: {
 	  			text: {
   					button: 'Add to Cart',
  					},
  					width: '80px',
+ 					styles: {
+ 						product: {
+ 							width: '225px',
+ 							height: '350px',
+ 						},
+ 						button: {
+ 							'background': 'linear-gradient(to bottom,#FCE08B,#f0c14b)',
+ 							color: 'black',
+ 							width: '120px',
+ 							padding: '10px',
+ 							'border-radius': '3px',
+ 							border: '1px solid #A2A6AC'
+ 						},
+ 						title: {
+ 							height: '40px',
+ 						}
+ 					}
 	  		},
 	  		cart: {
- 					popup: false,
+ 					'popup': 'false',
+ 					styles: {
+ 						button: {
+ 							
+ 						}
+ 					}
  				},
  				window: {
- 					width: 1000
+ 					width: 1000,
  				}
 	  	}
 		});

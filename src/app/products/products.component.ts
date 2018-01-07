@@ -20,6 +20,7 @@ export class ProductsComponent implements OnInit {
 
   ngAfterViewInit() {
   	this.shopifyProductService.displayProducts(this.collectionId, this.elementId);
+    document.querySelector('div.shopify-buy__cart-toggle').id = 'cart';
   }
 
 }

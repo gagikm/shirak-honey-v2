@@ -1,12 +1,7 @@
-.collection {
-	background-color: white;
-	border-radius: 4px;
-	margin: 10px;
-}
-
 .collectionLabel {
+	text-align: center;
 	color: #424242;
-	font-size: 18px;
+	font-size: 22px;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-	padding: 24px 32px;
+	padding: 10px;
 }

@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { PrimaryNavbarComponent } from './primary-navbar/primary-navbar.component';
 
 import { ShopifyProductService } from './shopify-product.service';
+import { LocationsService } from './locations.service';
 import { ProductsComponent } from './products/products.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LocationsPageComponent } from './locations-page/locations-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -18,14 +21,16 @@ import { LocationsPageComponent } from './locations-page/locations-page.componen
     PrimaryNavbarComponent,
     ProductsComponent,
     HomePageComponent,
-    LocationsPageComponent
+    LocationsPageComponent,
+    AboutPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [ShopifyProductService],
+  providers: [ShopifyProductService, LocationsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

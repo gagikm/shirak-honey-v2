@@ -1,5 +1,25 @@
-<section id="map">
-<!--    <div class="overlay" onClick="style.pointerEvents='none'">-->
-<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/gagikm.jdok09di/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoiZ2FnaWttIiwiYSI6IjFRMjB3dUUifQ.3VCfsXnbwddei6pptoFEwA'></iframe>
-    
-    </section>   
+<div class="container-fluid">
+	<div>Shirak Honey products are available at these locations.</div>
+	<div class="row section">
+		<div class="col-12 col-sm-4 col-md-3 locationItem" *ngFor="let location of locations;">
+			<div class="locationImage">
+				<img src={{location.image}}>
+			</div>
+			<div class="locationName"> {{location.name}} </div>
+			<div class="locationAddress"> {{location.address}} </div>
+			<div class="directionsButton">
+				<a href="https://www.google.com/maps?q={{location.address}}" class="btn btn-primary"> Get Directions </a>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="row section no-padding">
+
+		<section id="map" style="width: 100%">
+			<!--    <div class="overlay" onClick="style.pointerEvents='none'">-->
+			<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/gagikm.jdok09di/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoiZ2FnaWttIiwiYSI6IjFRMjB3dUUifQ.3VCfsXnbwddei6pptoFEwA'></iframe>	    
+		</section>   
+	</div>
+
+</div>

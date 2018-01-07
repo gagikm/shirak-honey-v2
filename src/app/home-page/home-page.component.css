@@ -1,0 +1,8 @@
+.home-hero {
+	overflow: hidden;
+	max-height: 300px;
+}
+
+.home-hero img {
+	width: 100%;
+}

@@ -15,4 +15,8 @@ export class PrimaryNavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  public openCart() {
+    document.getElementById("cart").click();
+  }
+
 }
