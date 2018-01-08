@@ -1,21 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     background-color: #f7f7f7;
-    margin-top: 99px;
+    padding-top: 99px;
 }
 
-.container-fluid {
+.inner-width {
 	max-width: 1000px;
 }
 
 .section {
 	background-color: white;
 	border-radius: 4px;
-	margin: 10px 0px;
+	margin: 10px 10px;
 	width: 100%;
 	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.no-padding {
+.padding-none {
 	padding: 0px;
+}
+
+.bg-inherit {
+	background-color: inherit;
 }

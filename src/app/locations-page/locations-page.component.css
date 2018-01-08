@@ -1,6 +1,6 @@
 .locationItem {
 	padding: 20px;
-	min-width: 200px;
+	/*min-width: 210px;*/
 }
 
 .locationImage {
@@ -24,6 +24,7 @@
 
 .locationAddress {
 	text-align: center;
+	font-size: 14px;
 	height: 80px;
 	padding: 5px;
 }

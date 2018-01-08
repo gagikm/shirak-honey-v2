@@ -1,7 +1,8 @@
 .collectionLabel {
 	text-align: center;
 	color: #424242;
-	font-size: 22px;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-	padding: 10px;
+	font-size: 25px;
+	font-family: "Baumans", "Helvetica Neue", Helvetica, sans-serif;
+	padding: 10px 10px 20px 10px;
+	width: 100%;
 }

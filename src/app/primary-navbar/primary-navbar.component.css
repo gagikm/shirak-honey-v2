@@ -1,6 +1,8 @@
 nav {
 	background-color: #3498db;
 	opacity: 0.95;
+    font-family: 'Baumans';
+
 }
 
 .navbar-brand-mobile {
@@ -46,6 +48,10 @@ ul.navbar-nav {
  	.nav-item {
  		width: 100%;
  	}
+}
+
+.nav-link {
+	font-size: 25px;
 }
 
 .nav-items {
