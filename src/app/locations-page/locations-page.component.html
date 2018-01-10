@@ -1,6 +1,7 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="section">
+		<div class="section inner-width">
+			<h3 class="sectionLabel w-100">Can't wait for delivery? Find Shirak Honey products at these locations.</h3>
 			<div class="col-12 col-sm-4 col-md-3 locationItem" *ngFor="let location of locations;">
 				<div class="locationImage">
 					<img src={{location.image}}>
@@ -15,7 +16,7 @@
 	</div>
 
 	<div class="row">
-		<div class="section padding-none bg-inherit">
+		<div class="section inner-width padding-none bg-inherit">
 			<section id="map" style="width: 100%">
 				<!--    <div class="overlay" onClick="style.pointerEvents='none'">-->
 				<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/gagikm.jdok09di/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoiZ2FnaWttIiwiYSI6IjFRMjB3dUUifQ.3VCfsXnbwddei6pptoFEwA'></iframe>

@@ -1,6 +1,8 @@
 .home-hero {
+	width: 100%;
 	overflow: hidden;
-	max-height: 300px;
+	max-height: 400px;
+	margin: 0 auto;
 }
 
 .home-hero img {

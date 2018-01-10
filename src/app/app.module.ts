@@ -13,6 +13,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LocationsPageComponent } from './locations-page/locations-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     HomePageComponent,
     LocationsPageComponent,
     AboutPageComponent,
-    FooterComponent
+    FooterComponent,
+    ContactPageComponent,
   ],
   imports: [
     BrowserModule,

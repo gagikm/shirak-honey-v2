@@ -1,3 +1,9 @@
 .aboutImages img{
 	width: 100%;
+	padding:10px 0px;
+}
+
+h2 {
+	text-align: center;
+	width: 100%;
 }

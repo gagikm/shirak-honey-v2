@@ -19,4 +19,10 @@ export class PrimaryNavbarComponent implements OnInit {
     document.getElementById("cart").click();
   }
 
+  public toggleMenuIfMobile() {
+    if (window.innerWidth <= 767) {
+      this.isCollapsed = !this.isCollapsed;
+    }
+  }
+
 }
