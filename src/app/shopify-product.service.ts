@@ -49,12 +49,25 @@ export class ShopifyProductService {
  						}
  					}
 	  		},
+	  		toggle: {
+	  		  styles: {
+	  		    toggle: {
+	  		      'background-color': '#3498db',
+	  		      ':hover': {
+	  		        'background-color' : '#3489db'
+	  		      }
+	  		    }
+	  		  }
+	  		},
 	  		cart: {
  					'popup': 'false',
  					styles: {
  						button: {
- 							
- 						}
+ 							'background-color': '#3498db',
+ 							':hover': {
+     						'background-color' : '#3489db'
+    					}
+ 						},
  					}
  				},
  				window: {
