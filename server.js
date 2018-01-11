@@ -1,10 +1,11 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var http = require('http');
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
+var express = require('express');
+var favicon = require('serve-favicon');
+var http = require('http');
+var logger = require('morgan');
+var path = require('path');
+var sslRedirect = require('heroku-ssl-redirect');
 
 var app = express();
 
@@ -16,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'dist')));
 
-
+app.use(sslRedirect());
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
