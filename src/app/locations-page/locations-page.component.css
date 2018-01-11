@@ -1,20 +1,20 @@
-.locationItem {
+.location-item {
 	padding: 20px;
 	/*min-width: 210px;*/
 }
 
-.locationImage {
+.location-image {
 	text-align: center;
 	margin: 0 auto;
 	width: 150px;
 	height: 150px;
 }
 
-.locationImage img{
+.location-image img{
 	width: 100%;
 }
 
-.locationName {
+.location-name {
 	padding: 5px;
 	height: 60px;
 	text-align: center;
@@ -22,18 +22,18 @@
 	font-size: 18px;
 }
 
-.locationAddress {
+.location-address {
 	text-align: center;
 	font-size: 14px;
 	height: 80px;
 	padding: 5px;
 }
 
-.directionsButton {
+.directions-button {
 	text-align: center;
 	padding: 5px;
 }
 
-.directionsButton a {
+.directions-button a {
 	background-color: #3498db;
 }

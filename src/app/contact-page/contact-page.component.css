@@ -6,3 +6,26 @@
 .contact-item img {
 	height: 150px;
 }
+
+.contact-buttons {
+	display: inherit;
+	flex-wrap: inherit;
+	width: 100%;
+	padding: 10px 0px;
+}
+
+.contact-btn {
+	text-align: center;
+	color: white;
+	width: 100%;
+	padding: 10px 0px;
+}
+
+.contact-btn a {
+	width:100%;
+	background: #3498db;
+}
+
+.contact-btn img {
+	padding-right: 5px;
+}

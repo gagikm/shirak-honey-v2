@@ -1,14 +1,14 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="section inner-width">
-			<h3 class="sectionLabel w-100">Can't wait for delivery? Find Shirak Honey products at these locations.</h3>
-			<div class="col-12 col-sm-4 col-md-3 locationItem" *ngFor="let location of locations;">
-				<div class="locationImage">
+			<h3 class="section-label w-100">Can't wait for delivery? Find Shirak Honey products at these locations.</h3>
+			<div class="col-12 col-sm-4 col-md-3 location-item" *ngFor="let location of locations;">
+				<div class="location-image">
 					<img src={{location.image}}>
 				</div>
-				<div class="locationName"> {{location.name}} </div>
-				<div class="locationAddress"> {{location.address}} </div>
-				<div class="directionsButton">
+				<div class="location-name"> {{location.name}} </div>
+				<div class="location-address"> {{location.address}} </div>
+				<div class="directions-button">
 					<a href="https://www.google.com/maps?q={{location.address}}" class="btn btn-primary"> Get Directions </a>
 				</div>
 			</div>
