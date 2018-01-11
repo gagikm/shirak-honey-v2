@@ -12,7 +12,8 @@ export class ContactPageComponent implements OnInit {
 
   ngOnInit() {
     if (window['FB']) {
-      window['FB'].XFBML.parse();
+      window['FB'].XFBML.parse(document.getElementById('contact-page'));
+
     }
   }
 }
