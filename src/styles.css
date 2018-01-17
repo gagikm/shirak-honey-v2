@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+	outline: none;
+}
+
 body {
     background-color: #f7f7f7;
-    padding-top: 99px;
+    margin-top: 50px;
 }
 
 @media (max-width: 767px) {
