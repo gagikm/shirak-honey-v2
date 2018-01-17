@@ -16,7 +16,6 @@
 
 .location-name {
 	padding: 5px;
-	height: 60px;
 	text-align: center;
 	font-weight: bold;
 	font-size: 18px;
@@ -25,7 +24,6 @@
 .location-address {
 	text-align: center;
 	font-size: 14px;
-	height: 80px;
 	padding: 5px;
 }
 
