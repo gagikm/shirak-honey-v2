@@ -11,7 +11,7 @@
 	display: inherit;
 	flex-wrap: inherit;
 	width: 100%;
-	padding: 10px 0px;
+	padding-top: 40px;
 }
 
 .contact-btn {
@@ -24,6 +24,7 @@
 .contact-btn a {
 	width:100%;
 	background: #3498db;
+	border: 1px solid #A2A6AC;
 }
 
 .contact-btn img {
