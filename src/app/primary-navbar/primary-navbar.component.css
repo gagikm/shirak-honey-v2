@@ -8,7 +8,8 @@ nav {
 
 .navbar-brand-mobile {
 	padding: 0px;
-	width: 33.3% !important;
+	margin-left: 25%;
+	width: 50% !important;
 }
 
 .mobile-logo-wrapper {
@@ -82,14 +83,9 @@ ul.navbar-nav {
  	}
 }
 
-@media (max-width: 400px) {
- 	.offset-xs-0 {
- 		margin-left: 0px;
- 	}
-
- 	.navbar-brand-mobile {
-		width: 50% !important;
-	}
-
+@media (max-width: 310px) {
+	.navbar-brand-mobile {
+		margin-left: 0px;
+}
 
 }
