@@ -7,8 +7,12 @@ nav {
 }
 
 .navbar-brand-mobile {
-	max-width: 150px;
 	padding: 0px;
+	width: 33.3% !important;
+}
+
+.mobile-logo-wrapper {
+	width: 100%;
 }
 
 .navbar-brand {
@@ -72,4 +76,20 @@ ul.navbar-nav {
  	.navbar-brand {
  		margin-top: 0px;
  	}
+
+ 	.navbar {
+ 		min-height: 81px;
+ 	}
+}
+
+@media (max-width: 400px) {
+ 	.offset-xs-0 {
+ 		margin-left: 0px;
+ 	}
+
+ 	.navbar-brand-mobile {
+		width: 50% !important;
+	}
+
+
 }
