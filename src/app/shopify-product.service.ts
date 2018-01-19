@@ -44,12 +44,18 @@ export class ShopifyProductService {
               width: "225px"
             },
             button: {
-              background: "linear-gradient(to bottom,#FCE08B,#f0c14b)",
-              color: "black",
+              background: "linear-gradient(to bottom,#37a6f2,#2683c1)",
+              color: "white",
               width: "120px",
               padding: "10px",
+              "border-style": "solid",
+              "border-width": "1px",
+              "border-color": "#007bff",
               "border-radius": "3px",
-              border: "1px solid #A2A6AC"
+              "font-weight": "500",
+              ":hover": {
+                background: "linear-gradient(to bottom,#35aeff,#2f94d8)"
+              }
             },
             title: {
               height: "40px"
@@ -59,15 +65,38 @@ export class ShopifyProductService {
         toggle: {
           events: {
             afterRender: function() {
-              document.getElementsByClassName("shopify-buy-frame--toggle")[0]
-                .style["boxShadow"] = "rgba(0, 0, 0, 0.15) 0px 3pt 12pt";
+              var toggleElement = <HTMLElement>document.getElementsByClassName(
+                "shopify-buy-frame--toggle"
+              )[0];
+              if (toggleElement) {
+                toggleElement.style["box-shadow"] =
+                  "rgba(0, 0, 0, 0.15) 0px 3pt 12pt";
+              }
+
+              var iframe = document
+                .getElementsByClassName("shopify-buy-frame--toggle")[0]
+                .getElementsByTagName("iframe")[0];
+              var innerDoc =
+                iframe.contentDocument || iframe.contentWindow.document;
+              var toggleIcon = <HTMLElement>innerDoc.getElementsByClassName(
+                "shopify-buy__icon-cart__group"
+              )[0];
+              if (toggleIcon) {
+                toggleIcon.style["fill"] = "black";
+              }
             }
           },
           styles: {
             toggle: {
-              "background-color": "#3498db",
+              "background-color": "#f4c85a",
+              color: "black",
               ":hover": {
-                "background-color": "#3489db"
+                "background-color": "#edc35a"
+              },
+              icon: {
+                "> g": {
+                  fill: "black"
+                }
               }
             }
           }
@@ -76,10 +105,12 @@ export class ShopifyProductService {
           popup: false,
           styles: {
             button: {
-              "background-color": "#3498db",
-              ":hover": {
-                "background-color": "#3489db"
-              }
+              background: "linear-gradient(to bottom,#FCE08B,#f0c14b)",
+              color: "black",
+              "border-style": "solid",
+              "border-width": "1px",
+              "border-color": "#a2a6ac #979aa1 #82858a",
+              "border-radius": "3px"
             }
           }
         },
@@ -107,6 +138,13 @@ export class ShopifyProductService {
             product: {
               "@media (min-width: 601px)": {
                 height: "100%"
+              }
+            },
+            button: {
+              background: "linear-gradient(to bottom,#FCE08B,#f0c14b)",
+              color: "black",
+              ":hover": {
+                background: "linear-gradient(to bottom,#f5d78e,#eeb933)"
               }
             }
           }
