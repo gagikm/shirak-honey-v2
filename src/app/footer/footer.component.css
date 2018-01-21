@@ -1,14 +1,16 @@
 .footer {
-	/*position: fixed;*/
-	/*bottom: 0;*/
 	color: white;
+	float:bottom;
 	/*height: 400px;*/
 	font-size: 14px;
-	margin-top: ;
+	font-family: "Hind Madurai";
+	border-top: 2px solid black;
 }
 
 .footer-content {
-	background-color: #10213d;
+	padding: 10px;
+	background-color: #043251;
+	color: #76889b;
 	text-align: center;
 }
 

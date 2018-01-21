@@ -46,3 +46,12 @@ body {
 .bg-inherit {
 	background-color: inherit;
 }
+
+.ta-center {
+	text-align: center;
+}
+
+.content-text {
+	padding: 10px;
+	font-family: "Hind Madurai", "Helvetica Neue", Helvetica, sans-serif;
+}

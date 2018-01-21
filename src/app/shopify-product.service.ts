@@ -41,16 +41,13 @@ export class ShopifyProductService {
           width: "160px",
           styles: {
             product: {
-              width: "225px"
+              width: "200px"
             },
             button: {
               background: "linear-gradient(to bottom,#37a6f2,#2683c1)",
               color: "white",
               width: "120px",
               padding: "10px",
-              "border-style": "solid",
-              "border-width": "1px",
-              "border-color": "#007bff",
               "border-radius": "3px",
               "font-weight": "500",
               ":hover": {
@@ -135,7 +132,18 @@ export class ShopifyProductService {
             imgWithCarousel: true
           },
           styles: {
+            price: {
+              "text-align": "center !important",
+              "width": "100%",
+            },
+            title: {
+              "text-align": "center"
+            },
+            variantTitle: {
+              "text-align": "center !important"
+            },
             product: {
+              "text-align": "center !important",
               "@media (min-width: 601px)": {
                 height: "100%"
               }

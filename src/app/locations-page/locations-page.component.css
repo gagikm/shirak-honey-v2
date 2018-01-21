@@ -33,7 +33,12 @@
 }
 
 .directions-button a {
+	font-family: 'Helvetica';
 	background-color: #3498db;
+	background: linear-gradient(to bottom,#37a6f2,#2683c1);
+	color: white;
+	border-radius: 3px;
+	font-weight: 300;
 }
 
 .locations-hero {
