@@ -26,10 +26,16 @@ export class ShopifyProductService {
           }
         },
         product: {
+          events: {
+            afterRender: function() {
+              document.getElementsByClassName(elementId)[0].style["display"] = "none";
+            }
+          },
           layout: "vertical",
-          isButton: "true",
           buttonDestination: "modal",
+          isButton: true,
           contents: {
+            button: false,
             imgWithCarousel: true,
             variantId: "all",
             description: false,
@@ -65,6 +71,7 @@ export class ShopifyProductService {
               var toggleElement = <HTMLElement>document.getElementsByClassName(
                 "shopify-buy-frame--toggle"
               )[0];
+
               if (toggleElement) {
                 toggleElement.style["box-shadow"] =
                   "rgba(0, 0, 0, 0.15) 0px 3pt 12pt";
@@ -73,11 +80,14 @@ export class ShopifyProductService {
               var iframe = document
                 .getElementsByClassName("shopify-buy-frame--toggle")[0]
                 .getElementsByTagName("iframe")[0];
+
               var innerDoc =
                 iframe.contentDocument || iframe.contentWindow.document;
+
               var toggleIcon = <HTMLElement>innerDoc.getElementsByClassName(
                 "shopify-buy__icon-cart__group"
               )[0];
+
               if (toggleIcon) {
                 toggleIcon.style["fill"] = "black";
               }
@@ -85,15 +95,10 @@ export class ShopifyProductService {
           },
           styles: {
             toggle: {
-              "background-color": "#f4c85a",
+              "background-color": "#ffd872",
               color: "black",
               ":hover": {
-                "background-color": "#edc35a"
-              },
-              icon: {
-                "> g": {
-                  fill: "black"
-                }
+                "background-color": "#fcd15f";
               }
             }
           }
