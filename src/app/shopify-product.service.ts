@@ -98,7 +98,7 @@ export class ShopifyProductService {
               "background-color": "#ffd872",
               color: "black",
               ":hover": {
-                "background-color": "#fcd15f";
+                "background-color": "#fcd15f",
               }
             }
           }
