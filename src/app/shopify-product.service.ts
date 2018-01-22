@@ -28,7 +28,7 @@ export class ShopifyProductService {
         product: {
           events: {
             afterRender: function() {
-              document.getElementsByClassName(elementId)[0].style["display"] = "none";
+              <HTMLElement>document.getElementsByClassName(elementId)[0].style["display"] = "none";
             }
           },
           layout: "vertical",

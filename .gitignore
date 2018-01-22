@@ -32,6 +32,8 @@
 npm-debug.log
 testem.log
 /typings
+newrelic.js
+newrelic_agent.log
 
 # e2e
 /e2e/*.js
