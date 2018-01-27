@@ -13,7 +13,13 @@ export class ContactPageComponent implements OnInit {
   ngOnInit() {
     if (window['FB']) {
       window['FB'].XFBML.parse(document.getElementById('contact-page'));
+    }
+  }
 
+  reloadPage(): void {
+    if (window) {
+  	 window.location.href = '/contact';
     }
   }
 }
+

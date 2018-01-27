@@ -46,7 +46,17 @@ export class ShopifyProductService {
             button: "View Item"
           },
           width: "160px",
+          classes: {
+            shopifyProduct: 'shopify-buy__btn--parent',
+            cartCloseButton: 'shopify-buy__btn--close',
+          },
           styles: {
+            cartCloseButton: {
+              'outline': 'none !important',
+            },
+            shopifyProduct: {
+              'outline': 'none !important'
+            },
             product: {
               width: "200px"
             },
@@ -67,34 +77,13 @@ export class ShopifyProductService {
           }
         },
         toggle: {
-          events: {
-            afterRender: function() {
-              var toggleElement = <HTMLElement>document.getElementsByClassName(
-                "shopify-buy-frame--toggle"
-              )[0];
-
-              if (toggleElement) {
-                toggleElement.style["box-shadow"] =
-                  "rgba(0, 0, 0, 0.15) 0px 3pt 12pt";
-              }
-
-              var iframe = document
-                .getElementsByClassName("shopify-buy-frame--toggle")[0]
-                .getElementsByTagName("iframe")[0];
-
-              var innerDoc =
-                iframe.contentDocument || iframe.contentWindow.document;
-
-              var toggleIcon = <HTMLElement>innerDoc.getElementsByClassName(
-                "shopify-buy__icon-cart__group"
-              )[0];
-
-              if (toggleIcon) {
-                toggleIcon.style["fill"] = "black";
-              }
-            }
+          classes: {
+            cartIcon: 'shopify-buy__icon-cart__group',
           },
           styles: {
+            cartIcon: {
+              'fill': 'black',
+            },
             toggle: {
               "background-color": "#ffd872",
               color: "black",
