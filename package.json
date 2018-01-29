@@ -19,6 +19,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^5.2.2",
+    "@angular/cli": "^1.6.6",
     "@angular/common": "^5.2.2",
     "@angular/compiler": "^5.2.2",
     "@angular/core": "^5.2.2",
@@ -41,9 +42,9 @@
     "jade": "~1.11.0",
     "morgan": "~1.9.0",
     "newrelic": "^2.6.1",
-    "ngx-slideshow": "0.0.9",
     "rxjs": "^5.5.6",
     "serve-favicon": "~2.4.5",
+    "typescript": "2.6.2",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
