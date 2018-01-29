@@ -4,7 +4,8 @@ import { ShopifyProductService } from '../shopify-product.service';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./products.component.css'],
+  providers: [ ShopifyProductService ]
 })
 export class ProductsComponent implements OnInit {
 

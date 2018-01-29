@@ -8,10 +8,14 @@
 	margin: 0 auto;
 	width: 150px;
 	height: 150px;
+
 }
 
 .location-image img{
 	width: 100%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .location-name {

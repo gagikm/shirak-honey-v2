@@ -8,7 +8,7 @@ import { PrimaryNavbarComponent } from './primary-navbar/primary-navbar.componen
 import { ShopifyProductService } from './shopify-product.service';
 import { LocationsService } from './locations.service';
 import { ProductsComponent } from './products/products.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LocationsPageComponent } from './locations-page/locations-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
