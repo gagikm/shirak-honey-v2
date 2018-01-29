@@ -12,4 +12,8 @@ describe('ShopifyProductService', () => {
   it('should be created', inject([ShopifyProductService], (service: ShopifyProductService) => {
     expect(service).toBeTruthy();
   }));
+
+  it('should not exist', () => {
+    expect((<any>window.ShopifyBuy)).toBeFalsy();
+  });
 });

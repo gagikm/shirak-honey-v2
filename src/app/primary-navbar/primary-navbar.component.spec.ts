@@ -2,13 +2,16 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PrimaryNavbarComponent } from './primary-navbar.component';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 describe('PrimaryNavbarComponent', () => {
   let component: PrimaryNavbarComponent;
   let fixture: ComponentFixture<PrimaryNavbarComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PrimaryNavbarComponent ]
+      declarations: [ PrimaryNavbarComponent ],
+      imports: [ NgbModule.forRoot() ],
     })
     .compileComponents();
   }));

@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AboutPageComponent } from './about-page.component';
 
@@ -8,7 +9,8 @@ describe('AboutPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AboutPageComponent ]
+      declarations: [ AboutPageComponent ],
+      imports: [ NgbModule.forRoot() ]
     })
     .compileComponents();
   }));
