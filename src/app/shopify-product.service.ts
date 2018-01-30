@@ -94,12 +94,12 @@ export class ShopifyProductService {
             popup: false,
             classes: {
               cartCloseButton: 'shopify-buy__btn--close',
-            }
+            },
             styles: {
               cartCloseButton: {
-                '-webkit-tap-highlight-color': 'rgba(255, 255, 255, 0)';
-                '-webkit-tap-highlight-color': 'transparent';
-              }
+                '-webkit-tap-highlight-color': 'rgba(255, 255, 255, 0)',
+                '-webkit-tap-highlight-color': 'transparent',
+              },
               button: {
                 background: "linear-gradient(to bottom,#FCE08B,#f0c14b)",
                 color: "black",
