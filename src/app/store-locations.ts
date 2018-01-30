@@ -6,11 +6,6 @@ export const LOCATIONS: Location[] = [
     image: '../assets/img/kp-logo.jpg',
     map: 'https://goo.gl/maps/QcWmkyaUoUk' },
 
-  {	name: 'Pacific Coast Food',
-    address: '7263 Greenback Lane, Citrus Heights, CA 95621',
-    image: '../assets/img/pacific-logo.jpg',
-    map: 'https://goo.gl/maps/4jjX61ipxF12' },
-
   { name: 'Neroe\'s Bakery',
     address: '6451 Fair Oaks Blvd, Carmichael, CA 95608',
     image: '../assets/img/neroes-logo.png',
@@ -43,6 +38,6 @@ export const LOCATIONS: Location[] = [
 
   { name: 'Sheri\'s Sonshine Nutrition Center',
     address: '6 N School St, Lodi, CA 95240',
-    image: 'https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/428147_10150640823629865_328653235_n.jpg?oh=deec172e6f5f9add5a3e148559a89532&oe=5B1E8D87',
+    image: '../assets/img/sheris-logo.jpg',
     map: 'https://goo.gl/maps/a87N2fbsn3Q2' },
 ];

@@ -7,9 +7,9 @@ export class ShopifyProductService {
   displayProducts(collectionId: string, elementId: string): void {
     if ((<any>window).ShopifyBuy) {
       var client = (<any>window).ShopifyBuy.buildClient({
-        domain: "shirak-test2.myshopify.com",
+        domain: "shirakhoney.myshopify.com",
         storefrontAccessToken: "19a8aafa5474068b67279972446d2cf5",
-        apiKey: "4e0872762c1b1e4327661562cda9a803",
+        apiKey: "2609f903c684ece969b8b36bcfd2f607",
         appId: "6"
       });
 
