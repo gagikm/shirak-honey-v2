@@ -97,8 +97,8 @@ export class ShopifyProductService {
             },
             styles: {
               cartCloseButton: {
-                '-webkit-tap-highlight-color': 'rgba(255, 255, 255, 0)',
                 '-webkit-tap-highlight-color': 'transparent',
+                '-webkit-focus-ring-color': 'rgba(255, 255, 255, 0)', 
               },
               button: {
                 background: "linear-gradient(to bottom,#FCE08B,#f0c14b)",
