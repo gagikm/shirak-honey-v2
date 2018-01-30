@@ -48,13 +48,9 @@ export class ShopifyProductService {
             },
             width: "160px",
             classes: {
-              shopifyProduct: 'shopify-buy__btn--parent',
-              cartCloseButton: 'shopify-buy__btn--close',
+              shopifyProduct: 'shopify-buy__btn--parent'
             },
             styles: {
-              cartCloseButton: {
-                'outline': 'none !important',
-              },
               shopifyProduct: {
                 'outline': 'none !important'
               },
@@ -96,7 +92,14 @@ export class ShopifyProductService {
           },
           cart: {
             popup: false,
+            classes: {
+              cartCloseButton: 'shopify-buy__btn--close',
+            }
             styles: {
+              cartCloseButton: {
+                '-webkit-tap-highlight-color': 'rgba(255, 255, 255, 0)';
+                '-webkit-tap-highlight-color': 'transparent';
+              }
               button: {
                 background: "linear-gradient(to bottom,#FCE08B,#f0c14b)",
                 color: "black",
