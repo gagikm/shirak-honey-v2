@@ -125,7 +125,8 @@ export class ShopifyProductService {
           },
           modalProduct: {
             text: {
-              button: "Add to Cart"
+              button: "Add to Cart",
+              outOfStock: "In Store Only"
             },
             contents: {
               imgWithCarousel: true
