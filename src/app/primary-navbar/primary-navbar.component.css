@@ -1,8 +1,7 @@
 nav {
 	background-color: #3498db;
-	border-bottom: 4px solid black;
-	border-top: 1px solid black;
     font-family: 'Hind Madurai';
+    box-shadow: 0 0 4px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.5);
     height: 50px;
 }
 
@@ -30,7 +29,7 @@ nav {
 .navbar-brand {
 	width: 100%;
 	padding: 0px;
-	margin-top: 50px;
+	margin-top: 52px;
 }
 
 .navbar-brand img {
