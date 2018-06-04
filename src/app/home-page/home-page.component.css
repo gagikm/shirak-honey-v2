@@ -9,3 +9,15 @@
 .home-hero img {
 	width: 100%;
 }
+
+@media (max-width: 767px) {
+	.home-hero img {
+		width: 150%;
+	}
+}
+
+@media (max-width: 500px) {
+	.home-hero img {
+		width: 250%;
+	}
+}
