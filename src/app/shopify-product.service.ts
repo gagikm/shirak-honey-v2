@@ -48,11 +48,25 @@ export class ShopifyProductService {
             },
             width: "160px",
             classes: {
-              shopifyProduct: 'shopify-buy__btn--parent'
+              shopifyProduct: 'shopify-buy__btn--parent',
+              shopifyProductPrice: 'shopify-buy__product__price'
+
             },
             styles: {
+              shopifyProductPrice: {
+                ":after": {
+                    "content": "Add to Cart",
+                    "font-weight": "600",
+                    "display": "block",
+                    "padding": "10px",
+                    "background": "#fcd15f",
+                    "width": "100px",
+                    "margin": "10px auto",
+                    "border-radius": "3px",
+                }
+              },
               shopifyProduct: {
-                'outline': 'none !important'
+                'outline': 'none !important',
               },
               product: {
                 width: "200px"
