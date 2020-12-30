@@ -48,8 +48,8 @@ export class ShopifyProductService {
               }
             },
             layout: "vertical",
-            buttonDestination: "cart",
-            isButton: false,
+            buttonDestination: "modal",
+            isButton: true,
             contents: {
               button: true,
               imgWithCarousel: true,
