@@ -7,14 +7,16 @@ var logger = require('morgan');
 var path = require('path');
 
 var app = express();
-
 app.set('view engine', 'jade');
+var sslRedirect = require('heroku-ssl-redirect');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'dist')));
+
+app.use(sslRedirect());
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
