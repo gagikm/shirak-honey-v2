@@ -7,12 +7,12 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 
 const routes: Routes = [
-	{ path: '', redirectTo: '/shop', pathMatch: 'full' },
-	{ path: 'shop', component: HomePageComponent },
-	{ path: 'locations', component: LocationsPageComponent },
-	{ path: 'about', component: AboutPageComponent },
-	{ path: 'contact', component: ContactPageComponent },
-	{ path: '**', redirectTo: '/shop' }
+	{ path: '', redirectTo: '/shop-local-sacramento-honey', pathMatch: 'full' },
+	{ path: 'shop-local-sacramento-honey', component: HomePageComponent },
+	{ path: 'sacramento-locations', component: LocationsPageComponent },
+	{ path: 'about-shirak-honey-sacramento', component: AboutPageComponent },
+	{ path: 'contact-us-sacramento', component: ContactPageComponent },
+	{ path: '**', redirectTo: '/shop-local-sacramento-honey' }
 ]
 
 @NgModule({
