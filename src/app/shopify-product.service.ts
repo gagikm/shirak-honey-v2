@@ -31,42 +31,42 @@ export class ShopifyProductService {
               afterRender: function() {
                 var placeholder = <HTMLElement>document.getElementsByClassName(elementId)[0];
                 placeholder.style["display"] = "none";
+
+                window.open = function(open) {
+                  return function (url, name, features) {
+                    // Pass through non-shopify URLS
+                    if (url.indexOf("myshopify") < 0) {
+                      return open.call(window, url, name, features);
+                    }
+
+                    // Use current window
+                    console.log("Redirecting to:", url);
+                    window.location.href = url;
+                    return null;
+                  };
+                }(window.open);
               }
             },
             layout: "vertical",
-            buttonDestination: "modal",
-            isButton: true,
+            buttonDestination: "cart",
+            isButton: false,
             contents: {
-              button: false,
+              button: true,
               imgWithCarousel: true,
               variantId: "all",
               description: false,
               options: false
             },
             text: {
-              button: "View Item"
+              button: "Add to Cart"
             },
             width: "160px",
             classes: {
-              shopifyProduct: 'shopify-buy__btn--parent',
-              shopifyProductPrice: 'shopify-buy__product__price'
-
+              shopifyProduct: 'shopify-buy__btn--parent'
             },
             styles: {
-              shopifyProductPrice: {
-                ":after": {
-                    "content": "Add to Cart",
-                    "font-weight": "600",
-                    "display": "block",
-                    "padding": "10px",
-                    "background": "#fcd15f",
-                    "width": "100px",
-                    "margin": "10px auto",
-                    "border-radius": "3px",
-                }
-              },
               shopifyProduct: {
-                'outline': 'none !important',
+                'outline': 'none !important'
               },
               product: {
                 width: "200px"
@@ -105,6 +105,10 @@ export class ShopifyProductService {
             }
           },
           cart: {
+            "contents": {
+              "button": true
+            },
+            buttonDestination: "checkout",
             popup: false,
             classes: {
               cartCloseButton: 'shopify-buy__btn--close',

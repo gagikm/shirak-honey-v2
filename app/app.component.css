@@ -1,7 +1,0 @@
-app-products {
-	height: 500px;
-}
-
-.router-outlet {
-	min-height: calc(100vh - 91px);
-}

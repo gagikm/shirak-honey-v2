@@ -26,10 +26,15 @@ export const LOCATIONS: Location[] = [
     image: '../assets/img/medi-logo.png',
     map: 'https://goo.gl/maps/x4KAfZhmUJS2' },
 
-  { name: 'Kabul Bazaar',
-    address: '640 East Bidwell Street, Folsom, CA 95630',
-    image: '../assets/img/kabul-logo.png',
-    map: 'https://goo.gl/maps/A4Lrw53qbsN2' },
+  { name: 'Babylon City Market',
+    address: '1745 Watt Ave, Sacramento, CA 95825',
+    image: '../assets/img/babylon-city-market.jpg',
+    map: 'https://goo.gl/maps/fAj7Ny7TYoR2', },
+
+  // { name: 'Kabul Bazaar',
+  //   address: '640 East Bidwell Street, Folsom, CA 95630',
+  //   image: '../assets/img/kabul-logo.png',
+  //   map: 'https://goo.gl/maps/A4Lrw53qbsN2' },
 
   { name: 'Citrus Plaza Market',
     address: '6420 San Juan Avenue, Citrus Heights, CA 95610',

@@ -29,7 +29,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot(),
+    NgbModule,
     AppRoutingModule
   ],
   providers: [ShopifyProductService, LocationsService],
