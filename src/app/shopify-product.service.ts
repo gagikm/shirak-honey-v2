@@ -20,9 +20,14 @@ export class ShopifyProductService {
         node: document.getElementById(elementId),
         options: {
           productSet: {
+            contents: {
+              pagination: true,
+            },
             styles: {
               products: {
-                "justify-content": "center"
+                "justify-content": "space-evenly",
+                "display": "flex",
+                "flex-wrap": "wrap"
               }
             }
           },
@@ -31,45 +36,44 @@ export class ShopifyProductService {
               afterRender: function() {
                 var placeholder = <HTMLElement>document.getElementsByClassName(elementId)[0];
                 placeholder.style["display"] = "none";
-
-                window.open = function(open) {
-                  return function (url, name, features) {
-                    // Pass through non-shopify URLS
-                    if (url.indexOf("myshopify") < 0) {
-                      return open.call(window, url, name, features);
-                    }
-
-                    // Use current window
-                    console.log("Redirecting to:", url);
-                    window.location.href = url;
-                    return null;
-                  };
-                }(window.open);
               }
             },
             layout: "vertical",
-            buttonDestination: "modal",
-            isButton: true,
+            isButton: false,
+            buttonDestination: "cart",
             contents: {
+              image: true,
+              quantity: true,
+              quantityIncrement: true,
+              quantityDecrement: true,
               button: true,
-              imgWithCarousel: true,
+              imgWithCarousel: false,
               variantId: "all",
-              description: false,
-              options: false
+              options: true
             },
             text: {
               button: "Add to Cart"
             },
             width: "160px",
             classes: {
-              shopifyProduct: 'shopify-buy__btn--parent'
+              shopifyProduct: 'shopify-buy__btn--parent',
+              quantitySelector: 'shopify-buy__quantity-container'
             },
             styles: {
               shopifyProduct: {
                 'outline': 'none !important'
               },
+              quantitySelector: {
+                'display': 'flex',
+                'justify-content': 'center'
+              },
               product: {
-                width: "200px"
+                width: "160px",
+                'min-width': 'auto',
+                'align-self': 'flex-end',
+                "@media (max-width: 767px)": {
+                  "margin-bottom": "30px"
+                }
               },
               button: {
                 background: "linear-gradient(to bottom,#37a6f2,#2683c1)",
@@ -83,7 +87,7 @@ export class ShopifyProductService {
                 }
               },
               title: {
-                height: "40px"
+                height: ""
               }
             }
           },
@@ -132,7 +136,13 @@ export class ShopifyProductService {
             width: 1000
           },
           modal: {
+            classes: {
+              modalProductImage: 'shopify-buy__product__variant-img'
+            },
             styles: {
+              modalProductImage: {
+                "max-height": "100%"
+              },  
               modal: {
                 "@media (min-width: 601px)": {
                   "margin-top": "50px",
@@ -147,7 +157,7 @@ export class ShopifyProductService {
               outOfStock: "In Store Only"
             },
             contents: {
-              imgWithCarousel: true
+              imgWithCarousel: false
             },
             styles: {
               price: {
@@ -162,6 +172,7 @@ export class ShopifyProductService {
               },
               product: {
                 "text-align": "center !important",
+                "height": "100%",
                 "@media (min-width: 601px)": {
                   height: "100%"
                 }
