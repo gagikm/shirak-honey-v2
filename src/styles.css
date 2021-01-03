@@ -20,6 +20,10 @@ body {
  	body {
 		margin-top: 93px;
  	}
+
+ 	.hidden-mobile {
+ 		display: none;
+ 	}
 }
 
 @media (max-width: 382px) {
