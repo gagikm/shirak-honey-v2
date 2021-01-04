@@ -14,6 +14,7 @@ import { LocationsPageComponent } from './locations-page/locations-page.componen
 import { AboutPageComponent } from './about-page/about-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { PureHoneyBannerComponent } from './pure-honey-banner/pure-honey-banner.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     AboutPageComponent,
     FooterComponent,
     ContactPageComponent,
+    PureHoneyBannerComponent,
   ],
   imports: [
     BrowserModule,
