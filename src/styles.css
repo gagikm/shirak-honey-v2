@@ -77,3 +77,7 @@ body {
 .shopify-buy-frame--toggle {
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 3pt 12pt;
 }
+
+a {
+	color: #212529;
+}
