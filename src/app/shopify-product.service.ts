@@ -76,14 +76,16 @@ export class ShopifyProductService {
                 }
               },
               button: {
-                background: "linear-gradient(to bottom,#37a6f2,#2683c1)",
-                color: "white",
-                width: "120px",
-                padding: "10px",
+                background: "linear-gradient(to bottom,#FCE08B,#f0c14b)",
+                color: "black",
+                "border-style": "solid",
+                "border-width": "1px",
+                "border-color": "#a2a6ac #979aa1 #82858a",
                 "border-radius": "3px",
-                "font-weight": "500",
+                "width": "120px",
+                "padding": "10px",
                 ":hover": {
-                  background: "linear-gradient(to bottom,#35aeff,#2f94d8)"
+                  background: "linear-gradient(to bottom,#FCE08B,#f0c14b)"
                 }
               },
               title: {
@@ -111,6 +113,9 @@ export class ShopifyProductService {
           cart: {
             "contents": {
               "button": true
+            },
+            "text": {
+              "button": "Checkout"
             },
             buttonDestination: "checkout",
             popup: false,
