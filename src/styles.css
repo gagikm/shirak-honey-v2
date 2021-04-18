@@ -13,12 +13,12 @@ body, textarea:focus, input:focus{
 
 body {
     background-color: #f7f7f7;
-    margin-top: 88px;
+    margin-top: 50px;
 }
 
 @media (max-width: 767px) {
  	body {
-		margin-top: 131px;
+		margin-top: 93px;
  	}
 
  	.hidden-mobile {
@@ -28,7 +28,7 @@ body {
 
 @media (max-width: 382px) {
  	body {
- 		margin-top: 119px;
+ 		margin-top: 81px;
  	}
 }
 
