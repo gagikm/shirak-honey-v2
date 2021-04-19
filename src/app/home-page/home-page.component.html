@@ -1,26 +1,25 @@
 <div class="container-fluid">
+	<app-pure-honey-banner class="mt-20 block"></app-pure-honey-banner>
+	<app-products
+		collectionId='20139704364'
+		elementId='homepageCollection'
+		sectionLabel='Local raw honey in Sacramento &amp; surrounding regions'></app-products>
+	<app-call-us-banner></app-call-us-banner>
 
-	<div class="row hidden-mobile">
+	<app-products collectionId='234625368225' elementId='largeSizesCollection' sectionLabel='Local raw honey in larger jars'></app-products>
+	<app-products collectionId='36287807532' elementId='beeProductCollection' sectionLabel='Propolis, Royal Jelly, Vitamin Shoppe'></app-products>
+	<div class="row">
 		<div class="home-hero inner-width">
 			<ngb-carousel>
 				<ng-template ngbSlide>
 					<img src="/assets/img/400h/20-years-proudly-serving-northern-california-2001.png" alt="20 years - proudly serving northern california since 2001">
 				</ng-template>
-				<ng-template ngbSlide>
+				<!-- <ng-template ngbSlide>
 					<img src="/assets/img/400h/full-frame.jpg" alt="Raw local honeycomb frame">
-				</ng-template>
+				</ng-template> -->
 			</ngb-carousel>
 		</div>
 	</div>
-
-	<app-call-us-banner class="hidden-mobile"></app-call-us-banner>
-
-	<app-products collectionId='20139704364' elementId='homepageCollection' sectionLabel='Local raw honey in Sacramento &amp; surrounding regions'></app-products>
-
-	<app-pure-honey-banner></app-pure-honey-banner>
-
-	<app-products collectionId='234625368225' elementId='largeSizesCollection' sectionLabel='Local raw honey in larger jars'></app-products>
-	<app-products collectionId='36287807532' elementId='beeProductCollection' sectionLabel='Propolis, Royal Jelly, Vitamin Shoppe'></app-products>
 	<app-products collectionId='36188258348' elementId='hatsCollection' sectionLabel='Beekeeping supplies, smokers, & hats'></app-products>
 	<app-products collectionId='36181409836' elementId='smokersCollection' sectionLabel='Bee smokers'></app-products>
 </div>

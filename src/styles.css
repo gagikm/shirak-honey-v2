@@ -78,6 +78,18 @@ body {
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 3pt 12pt;
 }
 
+.mt-20 {
+	margin-top: 20px;
+}
+
+.block {
+	display: block;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
 a {
 	color: #212529;
 }
