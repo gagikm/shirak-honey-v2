@@ -14,6 +14,7 @@ export class ProductsComponent implements OnInit {
   @Input() collectionId: string;
   @Input() sectionLabel: string;
   @Input() elementId: string;
+  @Input() bottomDescription: string;
 
   ngOnInit() {
 

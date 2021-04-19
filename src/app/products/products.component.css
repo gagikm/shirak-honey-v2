@@ -96,3 +96,8 @@
 .section-label {
     margin-top: 10px;
 }
+
+.bottom-description {
+    margin: 0 25px 10px;
+    font-size: 14px;
+}
