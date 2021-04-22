@@ -1,0 +1,9 @@
+.wrapper {
+	margin-top: 12px;
+	width: calc(100% + 30px);
+	margin-left: -15px;
+}
+
+img {
+	width: 100%;
+}

@@ -17,6 +17,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { PureHoneyBannerComponent } from './pure-honey-banner/pure-honey-banner.component';
 import { CallUsBannerComponent } from './call-us-banner/call-us-banner.component';
 import { TopBannerComponent } from './top-banner/top-banner.component';
+import { HeroComponent } from './hero/hero.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { TopBannerComponent } from './top-banner/top-banner.component';
     PureHoneyBannerComponent,
     CallUsBannerComponent,
     TopBannerComponent,
+    HeroComponent,
   ],
   imports: [
     BrowserModule,

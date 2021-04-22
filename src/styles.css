@@ -22,13 +22,19 @@ body {
  	}
 
  	.hidden-mobile {
- 		display: none;
+ 		display: none !important;
  	}
 }
 
 @media (max-width: 382px) {
  	body {
  		margin-top: 81px;
+ 	}
+}
+
+@media (min-width: 768px) {
+ 	.hidden-desktop {
+ 		display: none !important;
  	}
 }
 
