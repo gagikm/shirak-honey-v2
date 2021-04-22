@@ -18,7 +18,7 @@ body {
 
 @media (max-width: 767px) {
  	body {
-		margin-top: 93px;
+		margin-top: 60px;
  	}
 
  	.hidden-mobile {
@@ -28,7 +28,7 @@ body {
 
 @media (max-width: 382px) {
  	body {
- 		margin-top: 81px;
+ 		margin-top: 60px;
  	}
 }
 
