@@ -43,7 +43,7 @@ export class ShopifyProductService {
             buttonDestination: "cart",
             contents: {
               image: true,
-              quantity: true,
+              quantity: false,
               quantityIncrement: true,
               quantityDecrement: true,
               button: true,

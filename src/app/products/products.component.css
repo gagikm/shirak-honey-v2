@@ -101,3 +101,9 @@
     margin: 0 25px 10px;
     font-size: 14px;
 }
+
+@media (max-width: 767px) {
+    .section-label {
+        margin-top: 0;
+    }
+}

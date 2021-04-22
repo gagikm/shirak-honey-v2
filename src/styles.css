@@ -13,29 +13,7 @@ body, textarea:focus, input:focus{
 
 body {
     background-color: #f7f7f7;
-    margin-top: 50px;
-}
-
-@media (max-width: 767px) {
- 	body {
-		margin-top: 60px;
- 	}
-
- 	.hidden-mobile {
- 		display: none !important;
- 	}
-}
-
-@media (max-width: 382px) {
- 	body {
- 		margin-top: 60px;
- 	}
-}
-
-@media (min-width: 768px) {
- 	.hidden-desktop {
- 		display: none !important;
- 	}
+    margin-top: 70px;
 }
 
 .inner-width {
@@ -98,4 +76,31 @@ body {
 
 a {
 	color: #212529;
+}
+
+@media (max-width: 767px) {
+ 	body {
+		margin-top: 60px;
+ 	}
+
+ 	.hidden-mobile {
+ 		display: none !important;
+ 	}
+
+ 	.section-label {
+ 		margin-bottom: 0;
+ 		padding-bottom: 0;
+ 	}
+}
+
+@media (max-width: 382px) {
+ 	body {
+ 		margin-top: 60px;
+ 	}
+}
+
+@media (min-width: 768px) {
+ 	.hidden-desktop {
+ 		display: none !important;
+ 	}
 }
