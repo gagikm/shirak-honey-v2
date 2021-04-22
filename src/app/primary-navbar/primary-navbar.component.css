@@ -88,8 +88,12 @@ ul.navbar-nav {
  		margin-top: 0px;
  	}
 
+ 	.navbar-brand img {
+ 		max-width: 100px;
+ 	}
+
  	.navbar {
- 		min-height: 81px;
+ 		min-height: 60px;
  	}
 }
 
