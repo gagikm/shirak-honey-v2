@@ -80,7 +80,7 @@ a {
 
 @media (max-width: 767px) {
  	body {
-		margin-top: 60px;
+		margin-top: 63px;
  	}
 
  	.hidden-mobile {
@@ -95,7 +95,7 @@ a {
 
 @media (max-width: 382px) {
  	body {
- 		margin-top: 60px;
+ 		margin-top: 63px;
  	}
 }
 
