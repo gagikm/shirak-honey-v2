@@ -73,6 +73,9 @@ export class ShopifyProductService {
                 'align-self': 'flex-end',
                 "@media (max-width: 767px)": {
                   "margin-bottom": "30px"
+                },
+                "@media (max-width: 354px)": {
+                  "margin-left": "0px"
                 }
               },
               button: {
