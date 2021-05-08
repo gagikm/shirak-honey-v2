@@ -52,7 +52,8 @@ export class ShopifyProductService {
               options: true
             },
             text: {
-              button: "Add to Cart"
+              button: "Add to Cart",
+              "outOfStock": "Sold Out"
             },
             width: "160px",
             classes: {
