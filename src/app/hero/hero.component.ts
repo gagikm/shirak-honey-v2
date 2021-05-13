@@ -13,8 +13,8 @@ export class HeroComponent implements OnInit {
   }
 
   onClick(): void {
-  	const wrapperElement = document.getElementById('wrapper');
-  	window.scrollTo({top: wrapperElement.clientHeight + 20, behavior:'smooth'})
+    const wrapperElement = document.getElementById('wrapper');
+    window.scrollTo({top: wrapperElement.clientHeight, behavior:'smooth'})
   }
 
 }

@@ -18,6 +18,7 @@ import { PureHoneyBannerComponent } from './pure-honey-banner/pure-honey-banner.
 import { CallUsBannerComponent } from './call-us-banner/call-us-banner.component';
 import { TopBannerComponent } from './top-banner/top-banner.component';
 import { HeroComponent } from './hero/hero.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { HeroComponent } from './hero/hero.component';
     CallUsBannerComponent,
     TopBannerComponent,
     HeroComponent,
+    ReviewsComponent,
   ],
   imports: [
     BrowserModule,
