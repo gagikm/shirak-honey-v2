@@ -58,7 +58,8 @@ export class ShopifyProductService {
             width: "160px",
             classes: {
               shopifyProduct: 'shopify-buy__btn--parent',
-              quantitySelector: 'shopify-buy__quantity-container'
+              quantitySelector: 'shopify-buy__quantity-container',
+              disabledButton: 'shopify-buy__btn-disabled'
             },
             styles: {
               shopifyProduct: {
@@ -90,7 +91,11 @@ export class ShopifyProductService {
                 "padding": "10px",
                 ":hover": {
                   background: "linear-gradient(to bottom,#FCE08B,#f0c14b)"
-                }
+                },
+              },
+              disabledButton: {
+                "background-image": "none",
+                "background-color": "#eeeeee !important"
               },
               title: {
                 height: ""
