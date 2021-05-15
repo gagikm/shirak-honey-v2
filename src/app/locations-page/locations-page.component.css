@@ -56,3 +56,13 @@
 .locations-hero img {
 	width: 100%;
 }
+
+.subtitle {
+	width: 100%;
+	text-align: center;
+	margin-top: 0;
+}
+
+.section-label {
+	margin-bottom: 0;
+}
