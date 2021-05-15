@@ -29,3 +29,28 @@ img {
 .section-label {
 	margin-bottom: 10px;
 }
+
+.mobile-wrapper {
+	padding: 15px;
+    margin: 0 -15px;
+    background: #654320;
+    color: white;
+}
+
+.mobile-wrapper a, .mobile-wrapper a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.text {
+	text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.number-mobile {
+	font-weight: 600;
+	text-align: center;
+	padding: 0 5px;
+	font-size: 25px;
+}
