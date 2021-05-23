@@ -1,7 +1,9 @@
 <div id="wrapper" class="wrapper hidden-desktop" (click)="onClick()">
-	<img src="/assets/img/hero/100-percent-raw-local-honey-order-now-mobile.jpg" alt="Raw Local Honey Shop Now">
+	<img *ngIf="variantParam === 'sacramento'" src="/assets/img/hero/100-percent-raw-local-honey-order-now-mobile.jpg" alt="Raw Local Honey Order Now">
+	<img *ngIf="variantParam === ''" src="/assets/img/hero/100-percent-raw-organic-honey-generic-mobile.jpg" alt="Raw Organic Honey Order Now">
 </div>
 
 <div class="wrapper hidden-mobile inner-width">
-	<img src="/assets/img/hero/100-percent-raw-organic-local-honey-buy-online-now-desktop.jpg" alt="100% Raw Organic Local Honey. Really raw, really local. Buy Online Now. Free Local Shipping.">
+	<img *ngIf="variantParam === 'sacramento'" src="/assets/img/hero/100-percent-raw-organic-local-honey-buy-online-now-desktop.jpg" alt="100% Raw Organic Local Honey. Really raw, really local. Buy Online Now. Free Local Shipping.">
+	<img *ngIf="variantParam === ''" src="/assets/img/hero/100-percent-raw-organic-honey-generic-desktop.jpg" alt="100% Raw Organic Local Honey. Really raw, really local. Buy Online Now. Free Local Shipping.">
 </div>

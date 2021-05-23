@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pure-honey-banner',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pure-honey-banner.component.css']
 })
 export class PureHoneyBannerComponent implements OnInit {
+	@Input() variantParam: string;
 
   constructor() { }
 

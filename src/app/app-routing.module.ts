@@ -9,9 +9,13 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 const routes: Routes = [
 	{ path: '', redirectTo: '/shop-local-sacramento-honey', pathMatch: 'full' },
 	{ path: 'shop-local-sacramento-honey', component: HomePageComponent },
+	{ path: 'shop-raw-organic-honey', component: HomePageComponent },
 	{ path: 'sacramento-locations', component: LocationsPageComponent },
+	{ path: 'partner-store-locations', component: LocationsPageComponent },
 	{ path: 'about-shirak-honey-sacramento', component: AboutPageComponent },
+	{ path: 'about-shirak-honey', component: AboutPageComponent },
 	{ path: 'contact-us-sacramento', component: ContactPageComponent },
+	{ path: 'contact-us', component: ContactPageComponent },
 	{ path: '**', redirectTo: '/shop-local-sacramento-honey' }
 ]
 
