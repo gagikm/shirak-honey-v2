@@ -16,6 +16,7 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit() {
   	this.variantParam = this.route.snapshot.queryParamMap.get('hv');
+  	
   }
 
 }
