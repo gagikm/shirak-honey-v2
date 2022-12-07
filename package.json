@@ -28,7 +28,7 @@
     "@shopify/buy-button-js": "2.1.7",
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "heroku-ssl-redirect": "0.0.4",
     "http": "0.0.0",
     "morgan": "~1.9.0",
