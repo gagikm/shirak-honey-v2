@@ -25,7 +25,7 @@
     "@angular/platform-browser-dynamic": "^11.0.5",
     "@angular/router": "^11.0.5",
     "@ng-bootstrap/ng-bootstrap": "5.0.0",
-    "@shopify/buy-button-js": "2.4.0",
+    "@shopify/buy-button-js": "2.1.7",
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "express": "^4.17.1",
