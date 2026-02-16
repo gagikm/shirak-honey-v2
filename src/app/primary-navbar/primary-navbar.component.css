@@ -113,6 +113,15 @@
         flex-shrink: 0;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
+        /* Vertical centering */
+    }
+
+    .navbar>.container>.d-md-none .nav-link {
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
     }
 
     /* Logo wrapper should be centered with flex */
