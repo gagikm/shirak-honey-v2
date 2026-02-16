@@ -17,6 +17,10 @@
 }
 
 /* Logo */
+.navbar-brand {
+    margin-right: 0;
+}
+
 .navbar-brand img {
     height: auto;
     width: auto;
@@ -88,6 +92,34 @@
 @media (max-width: 767px) {
     .navbar-brand img {
         max-height: 50px !important;
+    }
+
+    /* Make the navbar container use proper flexbox for centering */
+    .navbar>.container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Hamburger button and cart should take equal width */
+    .navbar-toggler {
+        width: 48px;
+        flex-shrink: 0;
+    }
+
+    /* Cart icon container should match hamburger width */
+    .navbar>.container>.d-md-none {
+        width: 48px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Logo wrapper should be centered with flex */
+    .navbar-brand-wrapper {
+        flex-grow: 1;
+        display: flex !important;
+        justify-content: center !important;
     }
 
     .nav-item {
