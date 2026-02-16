@@ -32,20 +32,21 @@ img {
 
 .mobile-wrapper {
 	padding: 15px;
-    margin: 0 -15px;
-    background: #654320;
-    color: white;
+	margin: 0 -15px;
+	background: #003366;
+	color: white;
 }
 
-.mobile-wrapper a, .mobile-wrapper a:hover {
+.mobile-wrapper a,
+.mobile-wrapper a:hover {
 	text-decoration: none;
 	color: white;
 }
 
 .text {
 	text-transform: uppercase;
-    text-align: center;
-    color: white;
+	text-align: center;
+	color: white;
 }
 
 .number-mobile {

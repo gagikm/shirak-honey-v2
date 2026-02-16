@@ -5,7 +5,8 @@ h1 {
 
 .wrapper {
 	padding: 10px 20px;
-	background: #ffd872;
+	background: #003366;
+	color: white;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px;
 	border-radius: 12px;
 	display: flex;

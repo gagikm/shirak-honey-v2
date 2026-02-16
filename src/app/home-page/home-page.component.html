@@ -1,31 +1,36 @@
 <div class="container-fluid">
-	<app-hero
-		variantParam={{variantParam}}>
-			
-		</app-hero>
-	<app-products
-		collectionId='20139704364'
-		elementId='homepageCollection'
-		sectionLabel='Fast, easy checkout'
+	<div *ngIf="variantParam === null" class="row home-hero-wrapper">
+		<section class="hero-section d-flex align-items-center">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-eyebrow">SINCE 2001</div>
+					<h1 class="hero-headline">
+						100% Raw Organic Local <br> <span class="script-text">honey</span>
+					</h1>
+					<p class="hero-subhead">
+						Beekeeping has been in our family for generations. We take pride in caring for our bees to bring
+						100% raw, organic honey straight from our hives to your table.
+					</p>
+					<div class="hero-ctas">
+						<a (click)="scrollToProducts()" class="btn btn-primary hero-btn" style="cursor: pointer;">SHOP
+							HONEY</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<app-products collectionId='20139704364' elementId='homepageCollection' sectionLabel='Fast, easy checkout'
 		customClasses="top-products"></app-products>
 	<app-reviews class="hidden-desktop"></app-reviews>
 	<app-call-us-banner class="hidden-mobile"></app-call-us-banner>
-	<app-products collectionId='36287807532' elementId='beeProductCollection' sectionLabel='Propolis, Royal Jelly, Bee Pollen'></app-products>
-	
-	<app-call-us-banner class="hidden-desktop"></app-call-us-banner>
-	<app-pure-honey-banner 
-		class="mt-20 block"
-		variantParam={{variantParam}}>
-		</app-pure-honey-banner>
-	<app-products collectionId='234625368225' elementId='largeSizesCollection' sectionLabel='Raw Honey Larger Jars'></app-products>
+	<app-products collectionId='36287807532' elementId='beeProductCollection'
+		sectionLabel='Propolis, Royal Jelly, Bee Pollen'></app-products>
 
-	<div *ngIf="variantParam === null" class="row hidden-mobile">
-		<div class="home-hero inner-width">
-			<ngb-carousel>
-				<ng-template ngbSlide>
-					<img src="/assets/img/400h/20-years-proudly-serving-northern-california-2001.png" alt="20 years - proudly serving northern california since 2001">
-				</ng-template>
-			</ngb-carousel>
-		</div>
-	</div>
+	<!-- <app-call-us-banner class="hidden-desktop"></app-call-us-banner> -->
+	<!-- <app-pure-honey-banner class="mt-20 block" variantParam={{variantParam}}>
+	</app-pure-honey-banner> -->
+	<app-products collectionId='234625368225' elementId='largeSizesCollection'
+		sectionLabel='Raw Honey Larger Jars'></app-products>
+
+
 </div>

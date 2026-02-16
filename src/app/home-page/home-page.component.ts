@@ -8,15 +8,22 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home-page.component.css'],
 })
 export class HomePageComponent implements OnInit {
-	public variantParam: string;
+  public variantParam: string;
 
   constructor(config: NgbCarouselConfig, private route: ActivatedRoute) {
-  	config.interval = 10000;
+    config.interval = 10000;
   }
 
   ngOnInit() {
-  	this.variantParam = this.route.snapshot.queryParamMap.get('hv');
-  	
+    this.variantParam = this.route.snapshot.queryParamMap.get('hv');
+
+  }
+
+  scrollToProducts() {
+    const wrapperElement = document.querySelector('.home-hero-wrapper');
+    if (wrapperElement) {
+      window.scrollTo({ top: wrapperElement.clientHeight, behavior: 'smooth' });
+    }
   }
 
 }

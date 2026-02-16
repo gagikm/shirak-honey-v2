@@ -4,8 +4,7 @@ import { ShopifyProductService } from '../shopify-product.service';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css'],
-  providers: [ ShopifyProductService ]
+  styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
 
@@ -22,7 +21,7 @@ export class ProductsComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-  	this.shopifyProductService.displayProducts(this.collectionId, this.elementId);
+    this.shopifyProductService.displayProducts(this.collectionId, this.elementId);
   }
 
 }

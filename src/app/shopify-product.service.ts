@@ -2,7 +2,9 @@ import { Injectable } from "@angular/core";
 
 @Injectable()
 export class ShopifyProductService {
-  constructor() {}
+  public ui: any;
+
+  constructor() { }
 
   displayProducts(collectionId: string, elementId: string): void {
     if ((<any>window).ShopifyBuy) {
@@ -13,7 +15,8 @@ export class ShopifyProductService {
         appId: "6"
       });
 
-      var ui = (<any>window).ShopifyBuy.UI.init(client);
+      this.ui = (<any>window).ShopifyBuy.UI.init(client);
+      var ui = this.ui;
 
       ui.createComponent("collection", {
         id: collectionId,
@@ -33,7 +36,7 @@ export class ShopifyProductService {
           },
           product: {
             events: {
-              afterRender: function() {
+              afterRender: function () {
                 var placeholder = <HTMLElement>document.getElementsByClassName(elementId)[0];
                 placeholder.style["display"] = "none";
               }
@@ -81,21 +84,22 @@ export class ShopifyProductService {
                 }
               },
               button: {
-                background: "linear-gradient(to bottom,#FCE08B,#f0c14b)",
-                color: "black",
+                background: "linear-gradient(to bottom,#004080,#003366)",
+                color: "white",
                 "border-style": "solid",
                 "border-width": "1px",
-                "border-color": "#a2a6ac #979aa1 #82858a",
+                "border-color": "#002244",
                 "border-radius": "3px",
                 "width": "120px",
                 "padding": "10px",
                 ":hover": {
-                  background: "linear-gradient(to bottom,#FCE08B,#f0c14b)"
+                  background: "linear-gradient(to bottom,#004c99,#003366)"
                 },
               },
               disabledButton: {
                 "background-image": "none",
-                "background-color": "#eeeeee !important"
+                "background-color": "#ccd9e6 !important",
+                "color": "#668099 !important"
               },
               title: {
                 height: ""
@@ -108,13 +112,13 @@ export class ShopifyProductService {
             },
             styles: {
               cartIcon: {
-                'fill': 'black',
+                'fill': 'white',
               },
               toggle: {
-                "background-color": "#ffd872",
-                color: "black",
+                "background-color": "#003366",
+                color: "white",
                 ":hover": {
-                  "background-color": "#fcd15f",
+                  "background-color": "#002244",
                 }
               }
             }
@@ -134,14 +138,14 @@ export class ShopifyProductService {
             styles: {
               cartCloseButton: {
                 '-webkit-tap-highlight-color': 'transparent',
-                '-webkit-focus-ring-color': 'rgba(255, 255, 255, 0)', 
+                '-webkit-focus-ring-color': 'rgba(255, 255, 255, 0)',
               },
               button: {
-                background: "linear-gradient(to bottom,#FCE08B,#f0c14b)",
-                color: "black",
+                background: "linear-gradient(to bottom,#004080,#003366)",
+                color: "white",
                 "border-style": "solid",
                 "border-width": "1px",
-                "border-color": "#a2a6ac #979aa1 #82858a",
+                "border-color": "#002244",
                 "border-radius": "3px"
               }
             }
@@ -156,7 +160,7 @@ export class ShopifyProductService {
             styles: {
               modalProductImage: {
                 "max-height": "100%"
-              },  
+              },
               modal: {
                 "@media (min-width: 601px)": {
                   "margin-top": "50px",
@@ -192,16 +196,40 @@ export class ShopifyProductService {
                 }
               },
               button: {
-                background: "linear-gradient(to bottom,#FCE08B,#f0c14b)",
-                color: "black",
+                background: "linear-gradient(to bottom,#004080,#003366)",
+                color: "white",
                 ":hover": {
-                  background: "linear-gradient(to bottom,#f5d78e,#eeb933)"
+                  background: "linear-gradient(to bottom,#004c99,#003366)"
                 }
               }
             }
           }
         }
       });
+    }
+  }
+
+  toggleCart(): void {
+    if (this.ui) {
+      // Check if a cart component already exists
+      const carts = this.ui.components.cart;
+      if (carts && carts.length > 0) {
+        carts[0].toggleVisibility(true);
+      } else {
+        // If no cart exists, try to create one or warn
+        console.warn("No Shopify Cart component found. Initialization might be incomplete.");
+        // Fallback to trying to create it if needed, but usually it exists if displayProducts ran
+        this.ui.createComponent('cart').then(cart => {
+          cart.toggleVisibility(true);
+        }).catch(err => {
+          console.error("Failed to create cart:", err);
+          // Fallback to alert if valid
+          alert("Please add an item to the cart first.");
+        });
+      }
+    } else {
+      console.warn("Shopify UI not initialized yet.");
+      alert("Please add an item to the cart first.");
     }
   }
 }
